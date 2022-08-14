@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="css/gallery.css">
+
+</head>
+
+<body>
+
+    <div class="front" id="frontbox">
+
+        <img src="img/Manang.jpg" id="forward">
+        <span onclick="closeforward()">x</span>
+
+    </div>
+   
+   
+    <div class="gallery" >
+        <img src="img/Manang.jpg"  onclick="openforward(this.src)">
+        <img src="img/gosaikunda.jpg"  onclick="openforward(this.src)">
+        <img src="img/boudha.jpg" onclick="openforward(this.src)">
+        <img src="img/mustang.jpg"  onclick="openforward(this.src)">
+        <img src="img/patan.jpg"  onclick="openforward(this.src)">
+        <img src="img/pokhara.jpg"  onclick="openforward(this.src)">
+        <img src="img/rara.jpg"  onclick="openforward(this.src)">
+        <img src="img/tilicho.jpg"  onclick="openforward(this.src)">
+
+    </div>
+
+        <script>
+          var frontbox= document.getElementById("frontbox");
+          var forward= document.getElementById("forward");
+          
+          function openforward(pic){
+            frontbox.style.display="flex";
+            forward.src = pic;
+          }
+
+          function closeforward(){
+            frontbox.style.display = "none";
+
+          }
+
+        </script>
+
+
+
+</body>
+
+
+
+</html>
